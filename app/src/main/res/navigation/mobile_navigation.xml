@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tilly.grocerymerchantapp.Fragments.home.Fragment_home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.tilly.grocerymerchantapp.Fragments.inventory.Inventory_Fragment"
+        android:label="@string/menu_inventory"
+        tools:layout="@layout/all_inventory_" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.tilly.grocerymerchantapp.Fragments.category.Category_Fragment"
+        android:label="@string/menu_cat"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_additems"
+        android:name="com.tilly.grocerymerchantapp.Fragments.items.add_Item_Fragment"
+        android:label="@string/menu_items"
+        tools:layout="@layout/fragment_add_item_" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.tilly.grocerymerchantapp.Fragments.orders.fragment_orders"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.tilly.grocerymerchantapp.Fragments.reports.Fragment_reports"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports_" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.tilly.grocerymerchantapp.Fragments.setting.Fragment_setting"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_fragment_setting" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.tilly.grocerymerchantapp.Fragments.support.Fragment_support"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_fragment_support" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.tilly.grocerymerchantapp.Fragments.share.Fragment_share"
+        android:label="@string/menu_shares"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.tilly.grocerymerchantapp.Fragments.logout.Fragment_logout"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout_" />
+</navigation>

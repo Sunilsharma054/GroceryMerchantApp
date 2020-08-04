@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home_">
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:orientation="vertical">-->
+
+<!--&lt;!&ndash;            <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/textViewUser"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/viewParent.headerText"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:maxLines="2"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Hello Tilly!"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_centerVertical="true"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <de.hdodenhof.circleimageview.CircleImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/profileCircleImageView"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:civ_border_width="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:civ_border_color="@color/imageBorderColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:src="@drawable/logo"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentRight="true" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;                <ImageView&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:layout_width="30dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:layout_height="30dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:layout_centerVertical="true"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:layout_marginRight="10dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:src="@drawable/ic_search"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    android:layout_toLeftOf="@id/profileCircleImageView"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </RelativeLayout>&ndash;&gt;-->
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--               >-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/card_view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="@dimen/card_margin"-->
+<!--                    android:elevation="3dp"-->
+<!--                  >-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/thumbnail"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="160dp"-->
+<!--                            android:background="@drawable/slide"-->
+<!--                            android:clickable="true"-->
+<!--                            android:scaleType="fitXY" />-->
+
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/title"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_below="@id/thumbnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="@dimen/album_title_padding"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingRight="@dimen/album_title_padding"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingTop="@dimen/album_title_padding"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textColor="@color/album_title"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="@dimen/album_title" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/count"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_below="@id/title"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingBottom="@dimen/songs_count_padding_bottom"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingLeft="@dimen/album_title_padding"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:paddingRight="@dimen/album_title_padding"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="@dimen/songs_count" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/overflow"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="@dimen/ic_album_overflow_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="@dimen/ic_album_overflow_height"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_below="@id/thumbnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginTop="@dimen/ic_album_overflow_margin_top"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:scaleType="centerCrop"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:src="@drawable/ic_dots" />&ndash;&gt;-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--&lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginBottom="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cardCornerRadius="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cardPreventCornerOverlap="false"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    app:cardBackgroundColor="@color/designMainColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:minHeight="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentTop="true">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center_vertical"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:gravity="center_vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:padding="10dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:text="Welcome, Anil"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textColor="@color/whiteBodyColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_marginTop="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:text=""&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textColor="@color/whiteBodyColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textSize="13sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:cropToPadding="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:elevation="44dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:src="@drawable/slide" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="2.0"-->
+<!--                    android:orientation="horizontal" >-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/button1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1.5"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:text="Orders" />-->
+
+<!--                                        <Switch-->
+<!--                                            android:id="@+id/simpleSwitch"-->
+<!--                                            android:gravity="center"-->
+<!--                                            android:text="Gupta Store, BTM"-->
+<!--                                            android:checked="true"-->
+<!--                                            android:layout_weight="1.0"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="match_parent"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/button2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:layout_weight="1.5"-->
+<!--                        android:text="Profile?" />-->
+
+
+<!--                </LinearLayout>-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/title1"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_below="@id/youtubeThubnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/frutorial_title"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Order's"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="@dimen/frutorial_title" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <Switch&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/simpleSwitch"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Gupta Store, BTM 2nd Stage  "&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:checked="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="230dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/titl"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="90dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_below="@id/youtubeThubnail"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/frutorial_title"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Profile?"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="@dimen/frutorial_title" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="13dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Orders"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/viewParent.headerText"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <Switch&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/simpleSwitch"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Gupta Store, BTM 2nd Stage  "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:checked="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/viewParent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Profile"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_centerVertical="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/primaryTextColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textStyle="bold"/>&ndash;&gt;-->
+
+<!--            </RelativeLayout>-->
+
+<!--            &lt;!&ndash;remove the below layout with recycler view, use card poplar courses as model for design&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <include layout="@layout/card_popular_courses"/>-->
+<!--                <include layout="@layout/sec_card_popular_courses"/>-->
+<!--                <include layout="@layout/third_card_popular_courses"/>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:text="Order Status"-->
+<!--                    android:textSize="13dp"-->
+<!--                    style="@style/viewParent.headerText"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/viewParent"-->
+<!--                    android:text="See All"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:textSize="13dp"-->
+<!--                    android:textColor="@color/primaryTextColor"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--            &lt;!&ndash;remove the below layout with recycler view, use card poplar courses as model for design&ndash;&gt;-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <include layout="@layout/new_card_futures"/>-->
+<!--&lt;!&ndash;                <include layout="@layout/firsr_card_frutorials"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include layout="@layout/second_card_frutorials"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <include layout="@layout/all_card_frutorials"/>&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="10dp">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"></TextView>-->
+<!--        </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+        <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

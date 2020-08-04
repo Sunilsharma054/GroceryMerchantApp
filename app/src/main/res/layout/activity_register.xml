@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:text="Here’s\nyour first\nstep with \nus! "/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-9dp"
+                    android:layout_marginRight="-9dp"
+                    android:src="@drawable/logo" />
+<!--                <ImageView-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:src="@drawable/std"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentRight="true"/>-->
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textInputName"-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/LoginUsername"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Owner Name"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--&lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/editTextName"&ndash;&gt;-->
+<!--&lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:inputType="textPersonName"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:hint="Owner Name"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textInputEmail"-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/mobile_Number"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Owner Mobile Number)"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--&lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/editTextEmail"&ndash;&gt;-->
+<!--&lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:inputType="textEmailAddress"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:hint="@string/login_email_hint"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textInputMobile"-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Email_Address"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Email_Address"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--&lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/editTextMobile"&ndash;&gt;-->
+<!--&lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:inputType="phone"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:hint="Mobile Number"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/textInputPassword"-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Shopname"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Shop_Name"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--&lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/editTextPassword"&ndash;&gt;-->
+<!--&lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:hint="@string/login_password_hint"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:inputType="textPassword"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/text"-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Shopname_shortcut"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Shop_Shorcut/Famous Name"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--                        &lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:id="@+id/editTextPassword"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:hint="@string/login_password_hint"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:inputType="textPassword"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Shop_Category"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Shop_Category"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--                        &lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:id="@+id/editTextPassword"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:hint="@string/login_password_hint"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:inputType="textPassword"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Shopname_password"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Password"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--                        &lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:id="@+id/editTextPassword"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:hint="@string/login_password_hint"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:inputType="textPassword"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        style="@style/parent"-->
+<!--                        android:layout_marginTop="@dimen/loginViewsMargin">-->
+<!--                        <EditText-->
+<!--                            android:id="@+id/Shopname_conf_password"-->
+<!--                            android:layout_width="320dp"-->
+<!--                            android:layout_height="44dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="70dp"-->
+<!--                            android:background="@drawable/edittext_bg"-->
+<!--                            android:drawableLeft="@drawable/ic_person_black_24dp"-->
+<!--                            android:fontFamily="sans-serif-thin"-->
+<!--                            android:gravity="left"-->
+<!--                            android:hint="Confirm_Password"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:inputType="textEmailAddress"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:textSize="14dp"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingTop="16dp"-->
+<!--                            android:paddingRight="12dp"-->
+<!--                            android:paddingBottom="10dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:typeface="monospace"-->
+<!--                            tools:ignore="RtlCompat" />-->
+<!--                        &lt;!&ndash;                        <EditText&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:id="@+id/editTextPassword"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            style="@style/modifiedEditText"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:hint="@string/login_password_hint"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:maxLines="1"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            android:inputType="textPassword"/>&ndash;&gt;-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/cirRegisterButton"
+                        style="@style/loginButton"
+                        app:spinning_bar_width="4dp"
+                        app:spinning_bar_color="#FFF"
+                        android:text="Start"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_padding="6dp"/>
+
+                    <TextView
+                        style="@style/parent"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/themeColor"
+                        android:textSize="17sp"
+                        android:text="Already have an account?"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:onClick="onLoginClick"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:weightSum="12"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="30dp">-->
+
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/whiteTextColor"-->
+<!--                    android:layout_weight="3"/>-->
+
+<!--                <TextView-->
+<!--                    style="@style/viewParent.headerText.NoMode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/whiteTextColor"-->
+<!--                    android:text="Use other Methods"-->
+<!--                    android:layout_weight="6"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textAlignment="center"/>-->
+
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="@color/whiteTextColor"-->
+<!--                    android:layout_weight="3"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="30dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_facebook"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_google_plus"-->
+<!--                    android:layout_marginLeft="10dp"/>-->
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_width="11dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/ic_side_bg"/>-->
+<!--    <ImageView-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_back_img"-->
+<!--        android:layout_marginRight="11dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:onClick="onLoginClick"-->
+<!--        android:adjustViewBounds="false"/>-->
+    </ScrollView>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_side_bg"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_img"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onLoginClick"
+        android:adjustViewBounds="false"/>
+</RelativeLayout>

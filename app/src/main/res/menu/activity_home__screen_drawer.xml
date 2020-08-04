@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="@string/menu_inventory" />
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_control_point_duplicate_black_24dp"
+            android:title="@string/menu_cat" />
+        <item
+            android:id="@+id/nav_additems"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="@string/menu_items" />
+
+    </group>
+
+    <item android:title="Orders and Reports">
+        <menu>
+            <item
+                android:id="@+id/nav_orders"
+                android:icon="@drawable/ic_library_books_black_24dp"
+                android:title="@string/menu_order" />
+            <item
+                android:id="@+id/nav_reports"
+                android:icon="@drawable/ic_insert_chart_black_24dp"
+                android:title="@string/menu_reports" />
+        </menu>
+    </item>
+
+
+    <item android:title="Additional">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/menu_setting_vat" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_person_pin_black_24dp"
+                android:title="@string/menu_support" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/menu_shares" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_screen_lock_rotation_black_24dp"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>
